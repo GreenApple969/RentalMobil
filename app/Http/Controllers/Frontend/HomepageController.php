@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\frontend;
+namespace App\Http\Controllers\Frontend;
 
 use App\Models\Car;
 use App\Http\Controllers\Controller;
@@ -11,6 +11,6 @@ class HomepageController extends Controller
     public function index()
     {
         $cars = Car::latest()->get();
-        return view('frontend.homepage', compact('cars'));
+        return view('Frontend.homepage', compact('cars'));
     }
 }
